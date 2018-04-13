@@ -2,13 +2,18 @@
   "name": "vue-sparkline",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/vue-sparkline.common",
   "scripts": {
     "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib src/components/SparkLine.vue",
     "test": "vue-cli-service test",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "d3-array": "^1.2.1",
+    "d3-scale": "^2.0.0",
+    "d3-shape": "^1.2.0",
+    "lodash.debounce": "^4.0.8",
     "vue": "^2.5.13"
   },
   "devDependencies": {
