@@ -1,8 +1,9 @@
 {
   "name": "vue-d3-sparkline",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "main": "dist/vue-d3-sparkline.common",
+  "homepage": "https://github.com/nickolas1/vue-sparkline",
   "files": [
     "dist/",
     "src/components/",
