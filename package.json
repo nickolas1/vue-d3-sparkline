@@ -1,8 +1,9 @@
 {
-  "name": "vue-sparkline",
+  "name": "vue-d3-sparkline",
   "version": "0.1.0",
-  "private": true,
-  "main": "dist/vue-sparkline.common",
+  "private": false,
+  "main": "dist/vue-d3-sparkline.common",
+  "files": "dist",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build --target lib src/components/SparkLine.vue",
