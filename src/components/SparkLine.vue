@@ -16,7 +16,7 @@ import { scaleLinear as d3scaleLinear } from "d3-scale";
 import { line as d3line } from "d3-shape";
 import { extent as d3extent } from "d3-array";
 import * as debounce from "lodash.debounce";
-import Visvalingham from "@/util/Visvalingham";
+import Visvalingham from "../util/Visvalingham";
 
 const displayOptions = ["inline", "fill", "newline"];
 
