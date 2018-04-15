@@ -16,7 +16,7 @@
     "test": "vue-cli-service test",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "buildstorybook": "build-storybook -c .storybook -o .demo"
+    "buildstorybook": "build-storybook -c .storybook -o docs"
   },
   "dependencies": {
     "d3-array": "^1.2.1",
