@@ -34,7 +34,7 @@ yAccessor = d => d.value
 <Sparkline :data="dataCustom" :x-accessor="xAccessor" :y-accessor="yAccessor" />
 ```
 
-##Properties
+## Properties
 | prop        | type | required | default value |
 | ------------ |:---:|:--------:|:-------------:|
 | data | Array(Object) | false (but really, should have some data) | [] |
@@ -43,6 +43,6 @@ yAccessor = d => d.value
 | yAccessor | function | false | d => d.y |
 | display | string ('inline', 'fill', 'newline') | false | 'inline' |
 | height | number | false | 16 |
-| aspectRatio | number | galse | 5 |
+| aspectRatio | number | false | 5 |
 | responsive | boolean | false | false |
 
