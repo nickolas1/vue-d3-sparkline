@@ -1,7 +1,8 @@
 # vue-sparkline
 
-A D3 sparkline component for vue. Large datasets are simplified to an appropriate
-number of points.
+A D3 sparkline component for vue.
+
+[Demo](https://nickolas1.github.io/vue-sparkline/)
 
 ## Installation
 ```sh
