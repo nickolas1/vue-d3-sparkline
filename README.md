@@ -2,7 +2,7 @@
 
 A D3 sparkline component for vue.
 
-[Demo](https://nickolas1.github.io/vue-sparkline/)
+[Demo](https://nickolas1.github.io/vue-d3-sparkline/)
 
 ## Installation
 ```sh
