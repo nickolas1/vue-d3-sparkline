@@ -66,9 +66,7 @@ class Visvalingham {
   }
 
   static filter(points, pixelFactor = 1, threshold = 0.5) {
-    const result = points.filter(d => d._area * pixelFactor > threshold);
-    console.log(pixelFactor, points.length, result.length);
-    return result;
+    return points.filter(d => d._area * pixelFactor > threshold);
   }
 }
 

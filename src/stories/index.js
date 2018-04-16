@@ -16,6 +16,7 @@ const nptsMed = 500;
 const dataMed = [{ x: 0, y: 100 }];
 const dataBig = [{ x: 0, y: 100 }];
 const dataCustom = [{ x: 0, value: 100 }];
+const dataArray = [[0, 100]]
 const volatility = 0.02;
 for (let i = 1; i < nptsBig; i++) {
   // const rnd = parseInt(Math.sin(i).toString().substr(6, 9)) / 1.e9
@@ -26,6 +27,7 @@ for (let i = 1; i < nptsBig; i++) {
   if (i < nptsMed) {
     dataMed.push({ x: i, y: dataBig[i - 1]["y"] + changeAmount });
     dataCustom.push({ x: i, value: dataBig[i - 1]["y"] + changeAmount });
+    dataArray.push([i, dataBig[i - 1]["y"] + changeAmount]);
   }
 }
 const smallData = [
@@ -104,6 +106,34 @@ valueAccessor: d => d.value
         };
       },
       template: `<p><SparkLine :data="data" :y-accessor="valueAccessor"/></p>`
+    }))
+  )
+
+  .add(
+    "custom data accessor pt.2",
+    withMarkdownNotes(`
+Use the *x-accessor* and *y-accessor* properties to pass functions that access non-default data formats
+~~~js
+<SparkLine :data="data" :x-accessor="xAccessor" :y-accessor="yAccessor"/>
+~~~
+different data format:
+~~~
+[[1, 1], ...]
+~~~            
+with a custom data accessor:
+~~~js
+xAccessor: d => d[0]
+yAccessor: d => d[1]
+~~~
+  `)(() => ({
+      data() {
+        return {
+          data: dataArray,
+          xAccessor: d => d[0],
+          yAccessor: d => d[1]
+        };
+      },
+      template: `<p><SparkLine :data="data" :x-accessor="xAccessor" :y-accessor="yAccessor"/></p>`
     }))
   )
 

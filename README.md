@@ -25,15 +25,22 @@ data = [{x: <number>, y: <number>}, ...]
 ```
 
 ### Custom
+different object form:
 ```js
 dataCustom = [{xval: <number>, value: <number>}, ...]
 xAccessor = d => d.xval
 yAccessor = d => d.value
 ```
-
+or as an array of arrays:
+```js
+dataCustom = [[<number>, <number>], ...]
+xAccessor = d => d.[0]
+yAccessor = d => d.[1]
+```
 ```html
 <Sparkline :data="dataCustom" :x-accessor="xAccessor" :y-accessor="yAccessor" />
 ```
+
 
 ## Properties
 | prop        | type | required | default value |
