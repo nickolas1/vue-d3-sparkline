@@ -1,11 +1,11 @@
 {
   "name": "vue-d3-sparkline",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "main": "dist/vue-d3-sparkline.common",
   "homepage": "https://nickolas1.github.io/vue-d3-sparkline/",
-  "repository": { 
-    "type" : "git", 
+  "repository": {
+    "type" : "git",
     "url" : "https://github.com/nickolas1/vue-d3-sparkline.git"
   },
   "files": [
